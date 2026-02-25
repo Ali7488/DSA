@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm> // For std::swap and std::move
 
 template <typename Object>
 class Vector
@@ -265,7 +266,8 @@ void printVectorState(const Vector<int> &v, const std::string &label)
 
 int main()
 {
-    // test main to be run, run ./run in terminal
+    // test main to be run, run ./Vectors/run in terminal
+
     //  --- PHASE 1: Construction & Insertion ---
     Vector<int> v;
 
